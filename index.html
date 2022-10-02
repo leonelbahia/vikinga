@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+        * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+        html { scroll-behavior: smooth; }
+        body { color: #111; font-family: Verdana, Arial; line-height: 24px; margin: 0; padding: 0; border: 0; }
+        a, a:hover, a:active, a:focus {text-decoration: none; color: #000;}
+        img { width: 100%; }
+        ol, ul { list-style: none; }
+        blockquote, q { quotes: none; }
+
+        h1, h2, h3, h4 { margin: 0px; padding: 0px; }
+
+        h1 { margin: 18px 0px; color: #fff; }
+        h2 { color:#6e6b4f; margin: 10px 0px 30px 0px; }
+        h3 { text-indent: 30px; color: #6e6b4f; margin-top: 50px; }
+        h4 { text-indent: 30px; color: #fa9c00; margin-top: 50px; }
+        p { text-indent: 30px; color: #444; }
+
+        .encabezado__todo { width: 100%; height: 60px; background-color: #6f6b4f; }
+        .encabezado__todo--centrado, .parrafos { max-width: 1266px; min-width: 320px; margin: 0 auto; }
+        .encabezado__izquierda, .encabezado__derecha { display: inline-block; width: 49%; }
+        .encabezado__derecha { text-align: right; }
+        .encabezado__todo div ul { display: inline-flex; list-style-type: none; }
+        .encabezado__todo div ul li { margin: 0px 15px; }
+        .encabezado__todo div ul li a { color: #fff; }
+        .encabezado__todo div ul li a:hover { color: #fa9c00; }
+
+        .banner__todo { width: 100%; height: 420px; border-bottom: 2px solid #fa9c00; margin: 10px 0px 30px 0px; background: url(imgs/banner.jpg) no-repeat center; background-size: cover; }
+        .centrar__banner { max-width: 1980px; margin: 0 auto; }
+
+        .parrafos { max-width: 1166px; background-color: #f9f9f9; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; padding: 0px 25px 30px 25px; margin-bottom: 30px; }
+        .parrafos div { background: #fff; border-radius: 5px; border: 1px solid #e5e5e5;
+    padding: 20px 40px; margin: 25px 0px; }
+        .pie { width: 100%; height: 60px; background-color: #6e6b4f; text-align: center; }
+        .pie p { text-indent: 0px; color: #fff; margin: 0px; padding: 18px; }
+
+    </style>
+
+    <title>Maquetado HTML</title>
+
+</head>
+<body>
+    <div class="todo">
+        <div class="encabezado__todo">
+            <div class="encabezado__todo--centrado">
+                <div class="encabezado__izquierda">
+                    <h1>Iglesia Vikinga de Borgund</h1>
+                </div>
+                <div class="encabezado__derecha">
+                    <ul>
+                        <li><a href="#presentacion" title="" target="_self">Presentación</a></li>
+                        <li><a href="#ubicacion" title="" target="_self">Ubicación</a></li>
+                        <li><a href="#iglesia" title="" target="_self">La Iglesia</a></li>
+                        <li><a href="#referencias" title="" target="_self">Referencias</a></li>
+                        <li><a href="#autores" title="" target="_self">Autores</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="banner__todo">
+            <div class="centrar__banner">
+            </div>
+        </div>
+        <div class="parrafos">
+            <div>
+                <h2 id="presentacion">Presentación</h2>
+                <p>
+                    En los últimos años el cine y las plataformas de streaming nos han invitado a viajar con la imaginación a tierras vikingas. Pensar en runas y dragones ya se encuentra en el inconsciente colectivo y realmente suena a imaginario aunque muchas veces la realidad supera a la ficción.<br>
+                    Para emprender el viaje nos trasladaremos a Noruega. Allí descubriremos una de las piezas de arquitectura que mejor representa la convivencia cristiana con la cultura vikinga. Cerca de los más bellos fiordos noruegos, es donde se impone la majestuosidad de la Iglesia de Borgund.
+                </p>
+            </div>
+
+            <div>
+                <h2 id="ubicacion">Ubicación</h2>
+                <p>
+                    En la zona nórdica del planeta, hallamos el Reino de Noruega, es un Estado soberano de Europa septentrional. En su interior, ubicamos el pueblo de Laerdal, provincia de Sogn og Fjordane.<br>
+                    Fue en Laerdal donde en el siglo XII se inauguró la edificación del templo, dedicado al apóstol San Andrés. Actualmente funciona como museo y se puede llegar mediante vía aérea a través del aeropuerto Oslo-Gardermoen, a de 200 km, o del aeropuerto de Bergen-Flesland, a unos 180 km. Luego, desde cualquiera de los dos se llega en autobús.
+                </p>
+                <img src="imgs/mapa.jpg" alt="Mapa del norte de europa con la ubicación de Noruega" title="">
+            </div>
+
+            <div>
+                <h2 id="iglesia">La Iglesia</h2>
+                <p>
+                    Construída en el año 1180 dedicado al apóstol San Andrés, en un valle rodeado de verde y frondosa vegetación y dentro del perímetro formado por un bajo muro de piedra que rodea al cementerio del pueblo, se alza la que está considerada como una de las mejores iglesias de madera de Noruega. Sin edificios a su alrededor que puedan hacerle sombra, su sola presencia ya la hace brillar tanto por su estructura de madera, como por su atípica ornamentación.
+                </p>
+                <img src="imgs/iglesia.png" alt="Fotografía panorámica de la Iglesia Vikinga de Borgund" title="">
+                <p>
+                    Lo primero que nos impacta es su belleza exterior: se observan las tres gradas en las que está subdividido su tejado, acabadas con tejas de madera de pino. Esta estructura arquitectónica se encuentra decorada y ornamentada con diferentes motivos entre los que destacan de forma predominante cuatro tallas de cabezas de dragón que actúan y asumen la funcionalidad protectora de sus congéneres de las proas de los drakars vikingos. A todo lo largo del edificio se mezclan diseños cristianos y vikingos. Un pequeño campanario se encuentra en lo más alto del tejado que cubre la nave central. Dentro, una campana medieval aguarda el momento del toque.
+                </p>
+                <img src="imgs/campanario.png" alt="Vista interna del campanario" title="">
+                <p>
+                    El resto de aguilones de los tejados inferiores son adornados con cruces cristianas, así como la culminación de la estructura circular que corona la torre sobre el ábside y que domina esta parte del templo. Una nave central domina su interior. Está rodeada por una galería que protege su interior de la climatología adversa que sufre el lugar en la mayor parte del año. Al acceder a ella, la nave central se nos muestra oscura y escasa de luz. Originalmente las ventanas eran pequeñas y simples aperturas circulares abiertas al muro exterior con la intención que el duro clima externo no se colara al interior. El espacio central es pequeño y se encuentra libre de bancos y decoraciones. El púlpito es del siglo XVI y el altar data de 1654.
+                </p>
+                <p>
+                    Toda la estructura se apoya sobre doce soportales de madera colocados alrededor de la nave central. Ésta se encuentra bordeada por una cruz de San Andrés. Sobre este espacio se construye el techo formado por un intrincado marco usando numerosas vigas y viguetas, todo ello de maciza madera. Sólo el contemplar este entrelazado de madera ya te hace admirar su diseño arquitectónico.<br>
+                    Sobre la puerta oeste es visible un grabado de una batalla de dragones que se muestra como elemento ornamental decorativo. Además, en los soportales y marcos de las otras puertas aparecen inscripciones rúnicas.
+                </p>
+                <p>
+                    Es la obra maestra de las 30 Stavkirke medievales que han sobrevivido hasta la actualidad. Presenta un diseño monumental, con su característico techo de escalonamiento séxtuplo con decoración en forma de cabezas de dragones. Es también la mejor conservada, la más conocida y una de las más visitadas.
+                </p>
+                
+                    <h3>Construcción</h3>
+                    <p>
+                        La materia prima más común para la construcción de las Stavkirke fue la madera de pino (Pinus sylvestris). Para la construcción del armazón se utilizaron pinos bastante crecidos, cuyos troncos tuvieran un diámetro lo suficientemente grande y con abundante duramen en su madera. El duramen se halla impregnado de resina de manera natural, evitando la infección por agentes biológicos.
+                    </p>
+                    <img src="imgs/tejado.png" alt="Puerta en madera tallada a mano" title="">
+                
+                    <h3>Turismo</h3>
+                    <p>
+                        El Stavkirke de Borgund es propiedad de Fortidsminneforeningen (la Sociedad para la preservación de los antiguos monumentos noruegos). La Iglesia de Borgund es un centro turístico bastante visitado, un hecho que ha generado algunos problemas en su conservación. En 1973 se estableció un nuevo piso para proteger el original y se establecieron algunas restricciones para las visitas. Cuenta con un centro de visitantes con un pequeño antiquarium y algunos servicios turísticos. También hay algunos caminos antiguos que comienzan y llegan a la iglesia a través de Sverrestigen y Vindhella.
+                    </p>
+
+                    <h3>Clima</h3>
+                    <p>
+                        Gracias a las aguas templadas de la corriente del golfo, Noruega tiene un clima mucho más cálido y suave que otras partes del mundo con la misma latitud, como Alaska, Groenlandia o Siberia. En invierno, las zonas más frías suelen ser las del interior o las que se encuentran más al norte.<br>
+                        El territorio de Noruega se ubica entre los paralelos 57° y 78° latitud norte, por lo que el clima es bastante variado. Hay una gran diferencia entre el norte, el sur, el interior y la costa. Las zonas de costa tienen inviernos relativamente suaves y húmedos (pero con nieve en las montañas), mientras las regiones del interior tienen inviernos fríos con mucha nieve, y veranos cálidos y secos, sobre todo en el este del país. En esta zona, las temperaturas suelen rondar los 20 grados centígrados durante el verano. En la Noruega de los fiordos, el clima es bastante inestable. Que no te sorprenda si llueve, hace sol y nieva en el mismo día. Casi en cualquier época del año.<br>
+                        En primavera, los árboles frutales están en todo su esplendor. Durante el otoño, las hojas cambian de color y las laderas de las montañas se cubren de tonos dorados y cobrizos. El clima es de costa con un gran índice de precipitaciones, especialmente en las zonas más próximas al mar.
+                    </p>
+                
+                    <h3>Influencia Vikinga</h3>
+
+                        <h4>Antes de Cristo</h4>
+                        <p>
+                            Hablar de los vikingos es por lo general apelar a valores como la fortaleza, la resistencia física y las artes de la supervivencia por las armas, sin embargo la talla en madera es una seña de identidad de este pueblo, en especial las tallas que se hacían en la madera de los barcos. Hubo artistas que alcanzaron cierto renombre en esta técnica, con la que reflejaban la naturaleza y el entorno.
+                        </p>
+                        <img src="imgs/puerta.png" alt="Puerta en madera tallada a mano" title="">
+                        
+                        <h4>Después de Cristo</h4>
+                        <p>
+                            Éste es un lugar bello y paradigmático donde la tradición vikinga se ha sabido complementar con la cultura cristiana y donde el uso de la madera ha proporcionado mucho esplendor y riqueza a toda esta zona.<br>
+                            En un pequeño centro de interpretación aledaño hay una exposición donde se explica a base de paneles la historia de estas iglesias de madera y su papel social durante la edad media así como un conjunto de diferentes hallazgos arqueológicos vikingos.
+                        </p>
+            </div>
+
+            <div>
+                <h2 id="referencias">Referecias</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.visitnorway.es/listings/iglesia-de-madera-de-borgund/49280/" target="_blank">Visitnorway</a>
+                    </li>
+                    <li>
+                        <a href="https://hoynosvamosa.com/2015/02/25/iglesia-vikinga-de-borgund/" target="_blank">Hoynosvamosa</a>
+                    </li>
+                    <li>
+                        <a href="https://www.alasviajeras.com/blog/la-iglesia-de-madera-de-urnes-noruega" target="_blank">Alasviajeras</a>
+                    </li>
+                    <li>
+                        <a href="https://megaconstrucciones.net/?construccion=iglesia-madera-borgund" target="_blank">Megaconstrucciones</a>
+                    </li>
+                    <li>
+                        <a href="https://kripkit.com/stavkirke-de-borgund/" target="_blank">Kripkit</a>
+                    </li>
+                    <li>
+                        <a href="https://es.wikipedia.org/wiki/Iglesia_de_madera_de_Borgund" target="_blank">Wikipedia</a>
+                    </li>
+                </ul>
+        
+            </div>
+
+            <div>
+                <h2 id="autores">Autores</h2>
+                <div>
+                    <ul>
+                        <li>
+                            DATOS TUYOS
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            DATOS MIOS
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="pie">
+       <p>&copy; 2022</p>
+    </div>
+
+</body>
+</html>
