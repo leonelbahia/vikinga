@@ -4,45 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
-
-        * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
-        html { scroll-behavior: smooth; }
-        body { color: #111; font-family: Verdana, Arial; line-height: 24px; margin: 0; padding: 0; border: 0; }
-        a, a:hover, a:active, a:focus {text-decoration: none; color: #000;}
-        img { width: 100%; }
-        ol, ul { list-style: none; }
-        blockquote, q { quotes: none; }
-
-        h1, h2, h3, h4 { margin: 0px; padding: 0px; }
-
-        h1 { margin: 18px 0px; color: #fff; }
-        h2 { color:#6e6b4f; margin: 10px 0px 30px 0px; }
-        h3 { text-indent: 30px; color: #6e6b4f; margin-top: 50px; }
-        h4 { text-indent: 30px; color: #fa9c00; margin-top: 50px; }
-        p { text-indent: 30px; color: #444; }
-
-        .encabezado__todo { width: 100%; height: 60px; background-color: #6f6b4f; }
-        .encabezado__todo--centrado, .parrafos { max-width: 1266px; min-width: 320px; margin: 0 auto; }
-        .encabezado__izquierda, .encabezado__derecha { display: inline-block; width: 49%; }
-        .encabezado__derecha { text-align: right; }
-        .encabezado__todo div ul { display: inline-flex; list-style-type: none; }
-        .encabezado__todo div ul li { margin: 0px 15px; }
-        .encabezado__todo div ul li a { color: #fff; }
-        .encabezado__todo div ul li a:hover { color: #fa9c00; }
-
-        .banner__todo { width: 100%; height: 420px; border-bottom: 2px solid #fa9c00; margin: 10px 0px 30px 0px; background: url(imgs/banner.jpg) no-repeat center; background-size: cover; }
-        .centrar__banner { max-width: 1980px; margin: 0 auto; }
-
-        .parrafos { max-width: 1166px; background-color: #f9f9f9; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; padding: 0px 25px 30px 25px; margin-bottom: 30px; }
-        .parrafos div { background: #fff; border-radius: 5px; border: 1px solid #e5e5e5;
-    padding: 20px 40px; margin: 25px 0px; }
-        .pie { width: 100%; height: 60px; background-color: #6e6b4f; text-align: center; }
-        .pie p { text-indent: 0px; color: #fff; margin: 0px; padding: 18px; }
-
-    </style>
+    <link rel="stylesheet" href="css/iglesia.css" type="text/css">
 
     <title>Maquetado HTML</title>
 
@@ -52,7 +14,7 @@
         <div class="encabezado__todo">
             <div class="encabezado__todo--centrado">
                 <div class="encabezado__izquierda">
-                    <h1>Iglesia Vikinga de Borgund</h1>
+                    <h1 id="inicio">Iglesia Vikinga de Borgund</h1>
                 </div>
                 <div class="encabezado__derecha">
                     <ul>
@@ -73,18 +35,24 @@
             <div>
                 <h2 id="presentacion">Presentación</h2>
                 <p>
-                    En los últimos años el cine y las plataformas de streaming nos han invitado a viajar con la imaginación a tierras vikingas. Pensar en runas y dragones ya se encuentra en el inconsciente colectivo y realmente suena a imaginario aunque muchas veces la realidad supera a la ficción.<br>
+                    En los últimos años el cine y las plataformas de streaming nos han invitado a viajar con la imaginación a tierras vikingas. Pensar en runas y dragones ya se encuentra en el inconsciente colectivo y realmente suena a imaginario aunque muchas veces la realidad supera a la ficción.
+                </p>
+                <p>
                     Para emprender el viaje nos trasladaremos a Noruega. Allí descubriremos una de las piezas de arquitectura que mejor representa la convivencia cristiana con la cultura vikinga. Cerca de los más bellos fiordos noruegos, es donde se impone la majestuosidad de la Iglesia de Borgund.
                 </p>
+                <a href="#inicio" title="Volver arriba" target="_self">Subir</a>
             </div>
 
             <div>
                 <h2 id="ubicacion">Ubicación</h2>
                 <p>
-                    En la zona nórdica del planeta, hallamos el Reino de Noruega, es un Estado soberano de Europa septentrional. En su interior, ubicamos el pueblo de Laerdal, provincia de Sogn og Fjordane.<br>
+                    En la zona nórdica del planeta, hallamos el Reino de Noruega, es un Estado soberano de Europa septentrional. En su interior, ubicamos el pueblo de Laerdal, provincia de Sogn og Fjordane.
+                </p>
+                <p>
                     Fue en Laerdal donde en el siglo XII se inauguró la edificación del templo, dedicado al apóstol San Andrés. Actualmente funciona como museo y se puede llegar mediante vía aérea a través del aeropuerto Oslo-Gardermoen, a de 200 km, o del aeropuerto de Bergen-Flesland, a unos 180 km. Luego, desde cualquiera de los dos se llega en autobús.
                 </p>
-                <img src="imgs/mapa.jpg" alt="Mapa del norte de europa con la ubicación de Noruega" title="">
+                <img src="imgs/mapa.png" alt="Mapa del norte de europa con la ubicación de Noruega" title="">
+                <a href="#inicio" title="Volver arriba" target="_self">Subir</a>
             </div>
 
             <div>
@@ -101,7 +69,9 @@
                     El resto de aguilones de los tejados inferiores son adornados con cruces cristianas, así como la culminación de la estructura circular que corona la torre sobre el ábside y que domina esta parte del templo. Una nave central domina su interior. Está rodeada por una galería que protege su interior de la climatología adversa que sufre el lugar en la mayor parte del año. Al acceder a ella, la nave central se nos muestra oscura y escasa de luz. Originalmente las ventanas eran pequeñas y simples aperturas circulares abiertas al muro exterior con la intención que el duro clima externo no se colara al interior. El espacio central es pequeño y se encuentra libre de bancos y decoraciones. El púlpito es del siglo XVI y el altar data de 1654.
                 </p>
                 <p>
-                    Toda la estructura se apoya sobre doce soportales de madera colocados alrededor de la nave central. Ésta se encuentra bordeada por una cruz de San Andrés. Sobre este espacio se construye el techo formado por un intrincado marco usando numerosas vigas y viguetas, todo ello de maciza madera. Sólo el contemplar este entrelazado de madera ya te hace admirar su diseño arquitectónico.<br>
+                    Toda la estructura se apoya sobre doce soportales de madera colocados alrededor de la nave central. Ésta se encuentra bordeada por una cruz de San Andrés. Sobre este espacio se construye el techo formado por un intrincado marco usando numerosas vigas y viguetas, todo ello de maciza madera. Sólo el contemplar este entrelazado de madera ya te hace admirar su diseño arquitectónico.
+                </p>
+                <p>
                     Sobre la puerta oeste es visible un grabado de una batalla de dragones que se muestra como elemento ornamental decorativo. Además, en los soportales y marcos de las otras puertas aparecen inscripciones rúnicas.
                 </p>
                 <p>
@@ -139,6 +109,7 @@
                             Éste es un lugar bello y paradigmático donde la tradición vikinga se ha sabido complementar con la cultura cristiana y donde el uso de la madera ha proporcionado mucho esplendor y riqueza a toda esta zona.<br>
                             En un pequeño centro de interpretación aledaño hay una exposición donde se explica a base de paneles la historia de estas iglesias de madera y su papel social durante la edad media así como un conjunto de diferentes hallazgos arqueológicos vikingos.
                         </p>
+                        <a href="#inicio" title="Volver arriba" target="_self">Subir</a>
             </div>
 
             <div>
@@ -163,25 +134,24 @@
                         <a href="https://es.wikipedia.org/wiki/Iglesia_de_madera_de_Borgund" target="_blank">Wikipedia</a>
                     </li>
                 </ul>
-        
+                <a href="#inicio" title="Volver arriba" target="_self">Subir</a>
             </div>
 
             <div>
                 <h2 id="autores">Autores</h2>
-                <div>
+                <div id="pie__izquierda">
                     <ul>
-                        <li>
-                            DATOS TUYOS
-                        </li>
+                        <li>Estefanía</li>
+                        <li>Estefanía</li>
                     </ul>
                 </div>
-                <div>
+                <div id="pie__derecha">
                     <ul>
-                        <li>
-                            DATOS MIOS
-                        </li>
+                        <li>Leonel</li>
+                        <li>Leonel</li>
                     </ul>
                 </div>
+                <a href="#inicio" title="Volver arriba" target="_self">Subir</a>
             </div>
             
         </div>
